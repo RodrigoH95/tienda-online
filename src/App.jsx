@@ -18,7 +18,7 @@ function App() {
     <>
       <header className='header'>
         <div className="logo" onClick={() => navigate('/')}>
-          <img className='logo-image' src="/public/shop-stock.png" alt="logo del sitio de e-commerce shop stock" />
+          <img className='logo-image' src="./shop-stock.png" alt="logo del sitio de e-commerce shop stock" />
         </div>
         <nav className='nav-bar'>
           <div className="hamburger" onClick={() => toggleMenu()}>
