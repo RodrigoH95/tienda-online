@@ -20,13 +20,3 @@ export const getProductById = async (id) => {
     }
     return response.data;
 }
-
-export const getAllCategories = async () => {
-    const response = await instance.get("/categories");
-    return response.data;
-}
-
-export const getProductsByCategory = async (category) => {
-    const response = await instance.get(`/products/category/${category}`);
-    return response.data;
-}
