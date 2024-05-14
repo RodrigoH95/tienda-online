@@ -13,6 +13,11 @@ export const getAllProducts = async () => {
 
 export const getProductById = async (id) => {
     const response = await instance.get(`/products/${id}`);
+    console.log("response", response);
+
+    if (response.data === "") {
+        response.status = 404;
+    }
     return response.data;
 }
 
