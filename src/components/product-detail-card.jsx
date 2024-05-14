@@ -1,4 +1,8 @@
+import { useLocation } from "wouter";
+
 export const ProductDetailCard = ( product ) => {
+    const [_, navigate] = useLocation();
+    
     return <div className="product-container">
                 <section className="product-detail">
                     <div className="product-detail-image">
