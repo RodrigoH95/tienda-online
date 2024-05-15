@@ -11,7 +11,12 @@ export const ProductDetail = () => {
 
     useEffect(() => {
         getProductById(id).then((data) => {
-            setProduct(data);
+            if (data) {
+                setProduct(data);
+            }
+            else {
+                navigate('/404');
+            }
         });
     }, [id]);
 

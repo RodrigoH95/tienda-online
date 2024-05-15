@@ -36,8 +36,9 @@ function App() {
       </header>
       <main className='main'>
         <Switch>
-          <Route path='/' component={ProductsPage} />
           <Route path='/products/:id' component={ProductDetail} />
+          <Route path='/404' component={NotFound} />
+          <Route path='/' component={ProductsPage} />
           <Route component={NotFound} />
         </Switch>
       </main>
